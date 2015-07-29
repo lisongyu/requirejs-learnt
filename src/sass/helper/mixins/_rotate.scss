@@ -1,0 +1,8 @@
+@mixin rotate_hover(){
+  -moz-transform: rotate(3600deg); /* IE 9 */
+  -o-transform: rotate(3600deg); /* IE 9 */
+  -ms-transform: rotate(3600deg); /* IE 9 */
+  -webkit-transform: rotate(3600deg); /* Safari and Chrome */
+  transform: rotate(36000deg);
+ @include hover-transition();
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+//图片位置居中调用 @include pic-center(高度，margin-left负值)
+@mixin pic-center($height, $ml) {
+  position: relative;
+  height: $height;
+  overflow: hidden;
+  .img-center {
+    position: absolute;
+    left: 50%;
+    margin-left: $ml;
+    top: 0;
+  }
+
+}

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+//css3图片放大 调用方式 @include pic-scale($time: 0.5s, $scale: 1.2) $time时间 $scale倍数
+@mixin pic-scale($time: 0.5s, $scale: 1.2) {
+
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -moz-transition: all $time ease-in-out;
+    -webkit-transition: all $time ease-in-out;
+    -o-transition: all $time ease-in-out;
+    transition: all $time ease-in-out;
+    &:hover {
+      -moz-transform: scale($scale);
+      -webkit-transform: scale($scale);
+      -o-transform: scale($scale);
+      -ms-transform: scale($scale);
+      transform: scale($scale);
+
+      -moz-transition: all $time ease-in-out;
+      -webkit-transition: all $time ease-in-out;
+      -o-transition: all $time ease-in-out;
+      transition: all $time ease-in-out;
+    }
+
+  }
+
+}
