@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh_EN">
+<head>
+    <meta charset="UTF-8">
+    <title>方法使用测试</title>
+</head>
+<body>
+<!--此方式为了验证当方法名字相同时方法会被覆盖-->
+<script>
+    function showNum(){
+        alert(222);
+    }
+    showNum();
+    function showNum(){
+        alert(4444);
+    }
+</script>
+</body>
+</html>
