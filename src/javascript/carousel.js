@@ -1,6 +1,12 @@
 require.config({
     baseUrl: "javascript",
-    packages: ['carousel','jqthumb'],
+    packages: [
+        "carousel",
+        {
+            name: "carousel",
+            main: "carousel"
+        }
+    ],
     paths: {
         jquery: 'lib/jquery.min',
         bootstrap: 'lib/bootstrap'
@@ -10,6 +16,5 @@ require.config({
 
 //carousel.html 事例
 require(['carousel']);
-require(['jqthumb']);
 
 
