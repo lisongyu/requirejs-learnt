@@ -2,7 +2,7 @@ require.config({
     baseUrl: "javascript",
     //packages: ['carousel'],
     paths: {
-        jquery: 'lib/jquery.1.6',
+        jquery: 'lib/jquery-1.6',
         bootstrap: 'lib/bootstrap'
 
     },
